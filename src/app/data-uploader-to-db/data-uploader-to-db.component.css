@@ -1,0 +1,19 @@
+/* Style for the date picker button */
+button[type="button"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #1e6e96;
+  }
+  
+  /* Additional styling for better alignment */
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  

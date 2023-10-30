@@ -36,4 +36,13 @@ export class DataUploaderToDbComponent {
       }
     );
   }
+
+  openDatePicker(inputField: 'startDate' | 'endDate'): void {
+    // Here, you can implement a date picker dialog or use a date picker library.
+    // For simplicity, you can use the built-in JavaScript date picker.
+    const selectedDate = prompt(`Select ${inputField === 'startDate' ? 'Start' : 'End'} Date (YYYY-MM-DD):`);
+    if (selectedDate) {
+      this[inputField] = selectedDate;
+    }
+  }
 }
