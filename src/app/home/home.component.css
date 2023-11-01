@@ -1,0 +1,18 @@
+/* home.component.css */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .button-container button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .button-container button:hover {
+    background-color: #1e6e96;
+  }
+  

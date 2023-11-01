@@ -1,0 +1,43 @@
+<div class="data-table">
+    <table>
+      <thead>
+        <tr>
+          <th>INSTRUMENT</th>
+          <th>SYMBOL</th>
+          <th>EXPIRY_DT</th>
+          <th>STRIKE_PR</th>
+          <th>OPTION_TYP</th>
+          <th>OPEN</th>
+          <th>HIGH</th>
+          <th>LOW</th>
+          <th>CLOSE</th>
+          <th>SETTLE_PR</th>
+          <th>CONTRACTS</th>
+          <th>VAL_INLAKH</th>
+          <th>OPEN_INT</th>
+          <th>CHG_IN_OI</th>
+          <th>TIMESTAMP</th>
+        </tr>
+      </thead>
+       <tbody *ngFor="let item of fnoData"> 
+        <tr>
+          <td>{{ item.INSTRUMENT }}</td>
+          <td>{{ item.SYMBOL }}</td>
+          <td>{{ item.EXPIRY_DT }}</td>
+          <td>{{ item.STRIKE_PR }}</td>
+          <td>{{ item.OPTION_TYP }}</td>
+          <td>{{ item.OPEN }}</td>
+          <td>{{ item.HIGH }}</td>
+          <td>{{ item.LOW }}</td>
+          <td>{{ item.CLOSE }}</td>
+          <td>{{ item.SETTLE_PR }}</td>
+          <td>{{ item.CONTRACTS }}</td>
+          <td>{{ item.VAL_INLAKH }}</td>
+          <td>{{ item.OPEN_INT }}</td>
+          <td>{{ item.CHG_IN_OI }}</td>
+          <td>{{ item.TIMESTAMP }}</td>
+        </tr>
+      </tbody> 
+    </table>
+  </div>
+  

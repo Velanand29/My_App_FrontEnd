@@ -15,4 +15,46 @@
   </form>
 
   <p *ngIf="message">{{ message }}</p>
+
+  <!-- Display the data in a table -->
+  <table *ngIf="data.length">
+    <thead>
+      <tr>
+        <th>Instrument</th>
+        <th>Symbol</th>
+        <th>Expiry Date</th>
+        <th>Strike Price</th>
+        <th>Option Type</th>
+        <th>Open</th>
+        <th>High</th>
+        <th>Low</th>
+        <th>Close</th>
+        <th>Settle Price</th>
+        <th>Contracts</th>
+        <th>Value (in Lakh)</th>
+        <th>Open Interest</th>
+        <th>Change in OI</th>
+        <th>Timestamp</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data">
+        <td>{{ item.INSTRUMENT }}</td>
+        <td>{{ item.SYMBOL }}</td>
+        <td>{{ item.EXPIRY_DT }}</td>
+        <td>{{ item.STRIKE_PR }}</td>
+        <td>{{ item.OPTION_TYP }}</td>
+        <td>{{ item.OPEN }}</td>
+        <td>{{ item.HIGH }}</td>
+        <td>{{ item.LOW }}</td>
+        <td>{{ item.CLOSE }}</td>
+        <td>{{ item.SETTLE_PR }}</td>
+        <td>{{ item.CONTRACTS }}</td>
+        <td>{{ item.VAL_INLAKH }}</td>
+        <td>{{ item.OPEN_INT }}</td>
+        <td>{{ item.CHG_IN_OI }}</td>
+        <td>{{ item.TIMESTAMP }}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>

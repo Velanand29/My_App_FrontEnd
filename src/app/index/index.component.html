@@ -1,0 +1,40 @@
+<div class="section">
+    <h2>Index Data</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Index Name</th>
+          <th>Index Date</th>
+          <th>Open Index Value</th>
+          <th>High Index Value</th>
+          <th>Low Index Value</th>
+          <th>Closing Index Value</th>
+          <th>Points Change</th>
+          <th>Change(%)</th>
+          <th>Volume</th>
+          <th>Turnover (Rs. Cr.)</th>
+          <th>P/E</th>
+          <th>P/B</th>
+          <th>Div Yield</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let entry of indexData">
+          <td>{{ entry.IndexName }}</td>
+          <td>{{ entry.IndexDate }}</td>
+          <td>{{ entry.OpenIndexValue }}</td>
+          <td>{{ entry.HighIndexValue }}</td>
+          <td>{{ entry.LowIndexValue }}</td>
+          <td>{{ entry.ClosingIndexValue }}</td>
+          <td>{{ entry.PointsChange }}</td>
+          <td>{{ entry.ChangePercentage }}</td>
+          <td>{{ entry.Volume }}</td>
+          <td>{{ entry.Turnover }}</td>
+          <td>{{ entry.PE }}</td>
+          <td>{{ entry.PB }}</td>
+          <td>{{ entry.DividendYield }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

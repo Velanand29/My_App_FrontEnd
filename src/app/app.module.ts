@@ -4,15 +4,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DataUploaderToDbComponent } from './data-uploader-to-db/data-uploader-to-db.component';
 import { HomeComponent } from './home/home.component';
 import { RangeCalcComponent } from './range-calc/range-calc.component';
+import { StocksComponent } from './stocks/stocks.component';
+import { IndexComponent } from './index/index.component';
+import { FNOComponent } from './fno/fno.component';
+import { AllComponent } from './all/all.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DataUploaderToDbComponent,
-    HomeComponent,RangeCalcComponent
+    HomeComponent,RangeCalcComponent, StocksComponent, IndexComponent, FNOComponent, AllComponent
   ],
   imports: [
     BrowserModule,

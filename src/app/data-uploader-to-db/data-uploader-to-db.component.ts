@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { OptionData } from './data.model'; // Import the interface
 
 @Component({
   selector: 'app-data-uploader-to-db',
@@ -10,6 +11,7 @@ export class DataUploaderToDbComponent {
   startDate: string = '';
   endDate: string = '';
   message: string = '';
+  data: OptionData[] = []; // Data array based on the interface
 
   constructor(private http: HttpClient) {}
 

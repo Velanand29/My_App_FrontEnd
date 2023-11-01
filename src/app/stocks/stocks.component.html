@@ -1,0 +1,40 @@
+<div class="section">
+    <h2>Stocks Data</h2>
+    <table>
+      <tr>
+        <th>Symbol</th>
+        <th>Series</th>
+        <th>Date</th>
+        <th>Previous Close</th>
+        <th>Open Price</th>
+        <th>High Price</th>
+        <th>Low Price</th>
+        <th>Last Price</th>
+        <th>Close Price</th>
+        <th>Average Price</th>
+        <th>Total Quantity</th>
+        <th>Turnover (Lacs)</th>
+        <th>Number of Trades</th>
+        <th>Delivery Quantity</th>
+        <th>Delivery Percentage</th>
+      </tr>
+      <tr *ngFor="let item of stocksData">
+        <td>{{ item.SYMBOL }}</td>
+        <td>{{ item.SERIES }}</td>
+        <td>{{ item.DATE1 }}</td>
+        <td>{{ item.PREV_CLOSE }}</td>
+        <td>{{ item.OPEN_PRICE }}</td>
+        <td>{{ item.HIGH_PRICE }}</td>
+        <td>{{ item.LOW_PRICE }}</td>
+        <td>{{ item.LAST_PRICE }}</td>
+        <td>{{ item.CLOSE_PRICE }}</td>
+        <td>{{ item.AVG_PRICE }}</td>
+        <td>{{ item.TTL_TRD_QNTY }}</td>
+        <td>{{ item.TURNOVER_LACS }}</td>
+        <td>{{ item.NO_OF_TRADES }}</td>
+        <td>{{ item.DELIV_QTY }}</td>
+        <td>{{ item.DELIV_PER }}</td>
+      </tr>
+    </table>
+  </div>
+  
